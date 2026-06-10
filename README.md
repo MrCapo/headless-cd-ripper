@@ -24,3 +24,11 @@ Before running the script, ensure that the required packages are installed on yo
 
 ```bash
 sudo apt update && sudo apt install gddrescue curl eject -y
+```
+## How to run
+```bash
+TARGET_DIR="/mnt/storage4tb/archive" \
+TELEGRAM_BOT_TOKEN="123456:ABCdefGh..." \
+TELEGRAM_CHAT_ID="987654321" \
+DISCORD_WEBHOOK_URL="[https://discord.com/api/webhooks/](https://discord.com/api/webhooks/)..." \
+bash -c "$(curl -fsSL [https://raw.githubusercontent.com/MrCapo/headless-cd-ripper/main/ripper.sh](https://raw.githubusercontent.com/MrCapo/headless-cd-ripper/main/ripper.sh))"
