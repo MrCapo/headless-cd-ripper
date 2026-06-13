@@ -55,6 +55,7 @@ log_action() {
 
 # --- SCRIPT EXECUTION ENGINE ---
 clear
+sysctl -w dev.cdrom.autoclose=0 >/dev/null 2>&1
 log_action "INFO" "=== AUTOMATIC DISK COPIER INITIALIZED ==="
 log_action "INFO" "Target destination set to: $TARGET_DIR"
 log_action "INFO" "Hardware polling active on drive: $DRIVE"
