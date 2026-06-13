@@ -66,7 +66,7 @@ echo "----------------------------------------------------------------"
 
 while true; do
     # Check if the drive is ready and contains valid media
-    if ddrescue -i $DRIVE /dev/null -n 2>/dev/null; then
+    if dd if="$DRIVE" of=/dev/null bs=2048 count=1 status=none 2>/dev/null; then
         CURRENT_ISO="$TARGET_DIR/CD_${COUNTER}.iso"
         MAPFILE="$TARGET_DIR/CD_${COUNTER}.map"
         
