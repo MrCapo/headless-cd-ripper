@@ -31,4 +31,4 @@ TARGET_DIR="/mnt/storage4tb/archive" \
 TELEGRAM_BOT_TOKEN="123456:ABCdefGh..." \
 TELEGRAM_CHAT_ID="987654321" \
 DISCORD_WEBHOOK_URL="[https://discord.com/api/webhooks/](https://discord.com/api/webhooks/)..." \
-bash -c "$(curl -fsSL [https://raw.githubusercontent.com/MrCapo/headless-cd-ripper/main/ripper.sh](https://raw.githubusercontent.com/MrCapo/headless-cd-ripper/main/ripper.sh))"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/MrCapo/headless-cd-ripper/main/ripper.sh)"
