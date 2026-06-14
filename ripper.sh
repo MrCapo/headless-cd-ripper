@@ -84,7 +84,7 @@ while true; do
         # -d: Direct disc access (bypasses OS kernel cache)
         # -r3: Triggers a maximum of 3 retry passes on bad sectors
         echo "=== DDRESCUE OUTPUT FOR CD $COUNTER ===" >> "$LOG_FILE"
-        ddrescue -d -r3 "$DRIVE" "$CURRENT_ISO" "$MAPFILE" >> "$LOG_FILE" 2>&1
+        ddrescue -b 2048 -r3 -v "$DRIVE" "$CURRENT_ISO" "$MAPFILE" >> "$LOG_FILE" 2>&1
         EXIT_CODE=$?
         echo "========================================" >> "$LOG_FILE"
         
